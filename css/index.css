@@ -1,0 +1,873 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a {
+	color: #007FFF;
+}
+body{
+	background-color: #000;
+}
+header {
+	position: relative;
+	width: 100%;
+	height: 32rem;
+	box-sizing: border-box;
+	background-image: url('../resources/cl/v2.6.2/bg1.jpg'),url('../resources/cl/v2.6.2/bg2.jpg');
+	background-position: 0 0,0 15.3rem;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.space{
+	height: 13rem;
+	position: relative;
+}
+.cy_bnt{
+	background-image: url('../resources/cl/v2.6.2/qy_bnt.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 1.6rem;
+	margin: 0.5rem auto;
+}
+.checkbox {
+	width: 100%;
+	color: rgba(255,255,255,1);
+	text-align: center;
+	font-size: 0.5rem;
+	box-sizing: border-box;
+	padding-bottom: 0.5rem;
+}
+.body_img{
+	height: 10rem;
+	background-image: url('../resources/cl/v2.4.7/body_img.gif');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.main_input_box{
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.zf_text_box{
+	font-size: 0.5rem;
+	text-align: center;
+	color: rgba(255,255,255,0.4);
+	margin-bottom: 0.3rem;
+}
+.mh_box{
+	position: relative;
+	text-align: center;
+	font-size: .6rem;
+	width: 100%;
+	color: #FFF;
+	opacity: 0.9;
+	box-sizing: border-box;
+}
+.mh_box a{
+	color: rgba(255,255,0,1);
+}
+.kf_box{
+	text-align: center;
+	font-size: .6rem;
+	width: 90%;
+	margin: 0.5rem auto;
+	height: 1.3rem;
+	line-height: 1.3rem;
+	color: #FFF;
+	background-image: url('../resources/cl/v2.5.2/kf_bg.png');
+	background-size: 100% 100%;
+}
+
+.input_box {
+	margin: 0 auto 0.3rem ;
+	width: 80%;
+	height: 2.5rem;
+	background-image: url('../resources/cl/v2.5.5/input_bg.png');
+	border-radius: 2rem;
+	background-size: 100% 100%;
+}
+
+.input_box input {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height:100%;
+	outline: none;
+	border: none;
+	background: rgba(0, 0, 0, 0);
+	text-align: center;
+	font-size: 1rem;
+	color: #000;
+	line-height: 2.5rem;
+}
+.header_text{
+	font-size: 0.5rem;
+	color: #FFF;
+	text-align: center;
+	padding-top: .2rem;
+	box-sizing: border-box;
+	opacity: 0.8;
+}
+
+.input_active {
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	z-index: 100;
+}
+
+.btn1_active {
+	position: fixed;
+	top: 4rem;
+	left: .2rem;
+	z-index: 999;
+}
+
+input::-webkit-input-placeholder {
+	text-align: center;
+	font-size: .7rem;
+	color: #535553;
+}
+
+
+.input_sms_box{
+	display:-moz-box; /* Firefox */
+	display:-webkit-box; /* Safari and Chrome */
+	display:box;
+	width: 80%;
+	height: 2.2rem;
+	margin: .3rem auto;
+}
+.input_sms_inputitem{
+	-moz-box-flex:1; /* Firefox */
+	-webkit-box-flex:1; /* Safari and Chrome */
+	box-flex:1;
+	height: 100%;
+	box-sizing: border-box;
+	border: 1px solid #FF0B10;
+	background-color: #FFF;
+	border-radius: 2rem;
+	margin: 0 .5rem 0 .1rem;
+	background-size: 100% 100%;
+}
+.input_sms_inputitem input{
+	background-color: rgba(0,0,0,0);
+	outline: none;
+	border: none;
+	display: block;
+	height: 100%;
+	text-align: center;
+	color: #000;
+}
+.input_sms_bntitem{
+	-moz-box-flex:5; /* Firefox */
+	-webkit-box-flex:53; /* Safari and Chrome */
+	box-flex:5;
+	height: 100%;
+}
+.smsbnt{
+	background-image: url('../resources/cl/v1.5.7/get_sms_bnt.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.timer{
+	background-color: #FAD54E;
+	border-radius: 2rem;
+	color: #000;
+	font-size: .7rem;
+	text-align: center;
+	line-height: 2.2rem;
+	display: none;
+}
+
+.btn1 {
+	margin: 0rem auto;
+	width: 92%;
+	height: 3.5rem;
+	background-image: url('../resources/cl/v2.5.5/submit_bnt.gif');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.btn1_cover {
+	display: none;
+	margin: 0 auto;
+	width: 80%;
+	height: 2.2rem;
+	background-color: #FBEE00;
+	border-radius: 3rem;
+	color: #FA0B10;
+	text-align: center;
+	line-height: 2.2rem;
+	font-size: .7rem;
+}
+
+
+.body_xz{
+	font-size: .5rem;
+	text-align: center;
+	width: 100%;
+	color: #FFF;
+	bottom: 1rem;
+	position: absolute;
+}
+
+
+.tbody{
+	background-image: url('../resources/cl/v2.6.2/bg3.jpg'),url('../resources/cl/v2.6.2/bg4.jpg');
+	background-position: 0 0,0 14rem;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	min-height: 25rem;
+	position: relative;
+	background-color: #FF5C0F;
+	box-sizing: border-box;
+	padding-bottom: 0.5rem;
+}
+.product_info_2{
+	font-size: 0.5rem;
+	width: 100%;
+	margin: 0 auto;
+	background-color:#FF5C0F;
+	color: #FFF;
+}
+.product_info_2 h3{
+	font-size: 0.6rem;
+	text-align: center;
+	padding-bottom: 0.5rem;
+}
+.product_info_2 a{
+	color: rgba(255,255,0,0.8);
+}
+
+.kf_dh{
+	font-size: 0.7rem;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+}
+.foot_img{
+	position: absolute;
+	bottom:6rem;
+	left: 2%;
+	background-image: url('../resources/cl/v1.7.0/foot_img.gif');
+	width: 95%;
+	height: 3.8rem;
+	background-size: 100% auto;
+}
+
+.vip_info_box{
+	font-size: .5rem;
+	color: #FFF;
+	width: 90%;
+	margin: 0 auto;
+	line-height: 1rem;
+	margin: 1rem auto;
+}
+
+.product_info_bnt,.product_info_bnt_2{
+	position: absolute;
+	color: #cb1110;
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.7rem;
+	width: 40%;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	text-align: center;
+	bottom: 10vh;
+	background-color: #f0d13c;
+	border-radius: 1.5rem;
+	left:30%;
+}
+
+.body_kf{
+	position: absolute;
+	width: 80%;
+	text-align: center;
+	font-size: 0.6rem;
+	color: #FFF;
+	height: 2rem;
+	line-height: 1rem;
+	bottom: 2rem;
+	left: 10%;
+	font-weight: 550;
+}
+
+
+.product_info_show_bnt{
+	position:absolute;
+	background-size: 100% 100%;
+	width: 20%;
+	height: 1.2rem;
+	background-color: #000;
+	border-top-left-radius: .6rem;
+	border-bottom-left-radius: .6rem;
+	opacity: 0.5;
+	right: 0;
+	top: 2vh;
+	color: #FFFFFF;
+	font-size: .6rem;
+	text-align: center;
+	line-height: 1.2rem;
+	font-weight: bold;
+}
+
+
+.result {
+	position: relative;
+	width: 100vw;
+	height: 18.6rem;
+	margin-top: -1px;
+}
+
+.result .left {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+
+.result .right {
+	width: 5.7rem;
+	height: 11.6rem;
+	position: absolute;
+	top: 4.6rem;
+	right: 1.4rem;
+	z-index: 20;
+}
+
+.result .right_4 {
+	width: 27%;
+	height: 8.8rem;
+	position: absolute;
+	top: 4.8rem;
+	z-index: 20;
+	right: 1.9rem;
+}
+
+
+.conter {
+	width: 100%;
+	background-size: 100% 100%;
+	padding: 0 .8rem 0.5rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: -0.3rem;
+	background-image: url('../resources/cl/v2.4.3/bg4.jpg');
+	background-repeat: repeat-y;
+	min-height: 7.5rem;
+
+}
+
+
+.sin_box {
+	margin-top: 0.5rem;
+	width: 4.5rem;
+	height: 7.5rem;
+}
+
+.img_box {
+	width: 100%;
+	height: 80%;
+	overflow: hidden;
+	border-radius: 10px;
+
+}
+
+.img_box img {
+	width: 100%;
+	height: 100%;
+}
+
+.set_btn {
+	margin: 0.3rem auto;
+	width: 90%;
+	height: 1.2rem;
+	font-size: 0.5rem;
+	color: #FFF;
+	background-color: #FF9E00;
+	border-radius: .7rem;
+	line-height: 1.2rem;
+	text-align: center;
+}
+	
+.res_foot{
+	position: relative;
+	color: rgba(0,0,0,0.8);
+	background-image: url('../resources/cl/v2.4.3/bg5.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	font-size: 0.6rem;
+	width: 100%;
+	height: 3rem;
+	line-height: 1rem;
+	text-align: center;
+}
+
+
+.footer {
+	background-image: url('../resources/cl/v1.6.8/bg4_2.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: #FE9B50;
+	width: 100%;
+	min-height: 33rem;
+	height: auto;
+}
+.space2{
+	height:28rem;
+}
+
+
+
+.product_info_box,.product_info_box_2{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.product_info{
+	position: absolute;
+	color: #FFF;
+	width:90%;
+	height: 70vh;
+	top: 10vh;
+	left:5%;
+	padding: .5rem;
+	box-sizing: border-box;
+	font-size: .5rem;
+	line-height: 1rem;
+	overflow: scroll;
+	background-color: #FB7B24;
+	border-radius: 0.8rem;
+}
+
+.product_info_title{
+	font-weight: bold;
+	text-align: center;
+	font-size: .8rem;
+	margin: .5rem auto;
+}
+
+.product_info_bnt2,.activity_info_bnt2{
+	position: absolute;
+	width: 40%;
+	left: 30%;
+	bottom: 6vh;
+}
+.product_info_bnt2 img,.activity_info_bnt2 img{
+	width: 100%;
+}
+
+.tan_box {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tan_box .bg_box {
+	position: absolute;
+	top: 18vh;
+	left:5%;
+	width: 90%;
+	height: 16rem;
+}
+
+.tan_box .bg_box img {
+	width: 100%;
+	height: 100%;
+}
+
+.tan_box .bg_box .code_input {
+	position: absolute;
+	bottom:5.3rem;
+	left: 6.5rem;
+	outline: none;
+	width: 6.8rem;
+	height: 2.8rem;
+	border: none;
+	background: rgba(0, 0, 0, 0);
+	color: #dc0c2e;
+	font-size: .6rem;
+	line-height: 2rem;
+	text-align: center;
+}
+
+.tan_box .bg_box .btn_new {
+	width: 12rem;
+	height: 2.5rem;
+	position: absolute;
+	bottom: 1rem;
+	left: 1.5rem;
+}
+
+
+
+.phone_box {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.phone_box .bg_box {
+	position: absolute;
+	top: 25vh;
+	left: 12%;
+	width: 76%;
+	height: 16rem;
+}
+
+.phone_box .bg_box img {
+	width: 100%;
+	height: 100%;
+}
+
+.phone_box .bg_box .phone_input {
+	position: absolute;
+	bottom: 8rem;
+	left: 1rem;
+	outline: none;
+	width: 10.5rem;
+	height: 2rem;
+	border: none;
+	background: #eee;
+	color: #dc0c2e;
+	font-size: .6rem;
+	line-height: 1rem;
+	text-align: center;
+	border-radius: 1.15rem;
+	line-height: 2.3rem;
+	text-align: center;
+}
+
+.phone_box .bg_box .code_input {
+	position: absolute;
+	bottom: 5.3rem;
+	left: 1rem;
+	outline: none;
+	width: 5.2rem;
+	height: 1.92rem;
+	border: none;
+	background: #eee;
+	color: #dc0c2e;
+	font-size: .6rem;
+	line-height: 1rem;
+	text-align: center;
+	border-radius: 1.15rem;
+}
+
+.phone_box .bg_box .get_code {
+	position: absolute;
+	bottom: 5.2rem;
+	width: 5.3rem;
+	height: 2.2rem;
+	left: 6.6rem;
+	font-size: 12px;
+	text-align: center;
+	line-height: 2.2rem;
+	color: #f52806;
+}
+
+
+.phone_box .bg_box .btn_new2 {
+	width: 10rem;
+	height: 3rem;
+	position: absolute;
+	bottom: 0rem;
+	left: 1.2rem;
+}
+
+.success_box {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.succ_box {
+	position: absolute;
+	top: 20vh;
+	left:5%;
+	width: 90%;
+	height: 20rem;
+
+}
+
+.succ_box img {
+	width: 100%;
+	height: 100%;
+}
+
+.error_box {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.err_box {
+	position: absolute;
+	top: 20vh;
+	left:5%;
+	width: 90%;
+	height: 16rem;
+
+}
+
+.err_box img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.clock_btn1,
+.clock_btn3 {
+	position: absolute;
+	top: -1rem;
+	right: 0.5rem;
+	width: 1.3rem;
+	height: 1.3rem;
+	border: 2px solid #ccc;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 1.3rem;
+	color: #ccc;
+	border-radius: 50%;
+}
+
+.ok {
+	position: absolute;
+	bottom: 0rem;
+	left: 1.5rem;
+	width: 12rem;
+	height: 2.8rem;
+}
+
+.err_ok {
+	position: absolute;
+	bottom: 0rem;
+	left: 1.5rem;
+	width: 12rem;
+	height: 3rem;
+}
+
+.rule_btn {
+	width: 1.8rem;
+	height: 1.8rem;
+	position: absolute;
+	top: 10.5rem;
+	right: .2rem;
+}
+
+.rule_btn img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.rule_bg {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.rule_box {
+	width: 13rem;
+	height: 15rem;
+	position: absolute;
+	top: 20vh;
+	left: 10%;
+	background-image: url('../resources/cl/v1.0.5/tanbg4.png');
+	background-size: 100% 100%;
+	font-size: 12px;
+	box-sizing: border-box;
+}
+
+.rule_txt {
+	margin: 2rem .8rem 1rem;
+	height: 12rem;
+	overflow: scroll;
+}
+
+.rule_box div {
+	line-height: 22px;
+}
+
+.rule_box .close_btn2 {
+	position: absolute;
+	bottom: -2rem;
+	left: 42%;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 2px solid #ccc;
+	font-size: 1.2rem;
+	text-align: center;
+	line-height: 1.5rem;
+	color: #ccc;
+	border-radius: 50%;
+
+}
+
+/* 底部信息 */
+#firm_Info {
+	text-align: center;
+	font-size: 12px;
+	padding: .4rem;
+	box-sizing: border-box;
+	padding-top: 1rem;
+}
+
+#firm_Info div {
+	margin-bottom: .3rem
+}
+
+#firm_explain a {
+	text-decoration: underline;
+}
+.product_info_b{
+	color: #FFF;
+	font-size: .6rem;
+	text-align: center;
+	line-height: 1.2rem;
+}
+
+
+#color-input-red +label{
+    display: block;
+    width: 0.7rem;
+    height: 0.7rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1.2rem;
+    left: 2rem;
+    background: rgba(255, 255, 255, 1);
+	border: 1px solid #3C3C3C;
+	border-radius: 0.2rem;
+}
+ 
+
+#color-input-red:checked +label::before{
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+	line-height: 0.75rem;
+}
+
+input[type=checkbox]{
+	visibility: hidden;
+}
+
+.body_foot{
+	height: 5rem;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.kfinfo_foot_box{
+	width: 86%;
+	left:7%;
+	height: 1.5rem;
+	font-size: 0.6rem;
+	text-align: center;
+	line-height: 1.2rem;
+	color:rgba(255,255,255,0.9);
+}
+.kf_foot_box{
+	width: 86%;
+	height: 1.5rem;
+	font-size: 0.6rem;
+	background-image: url('../resources/cl/v1.7.0/kf_bg.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	text-align: center;
+	line-height: 1.2rem;
+	color:#FFF;
+	position: absolute;
+	bottom: 1rem;
+	left: 7%;
+}
+.qy_foot_box{
+	width: 100%;
+	height: 2.5rem;
+	font-size: 0.6rem;
+	text-align: center;
+	line-height: 1.2rem;
+	color:rgba(255,255,255,0.8);
+}
+.kf3{
+	position: absolute;
+	bottom: 3.5rem;
+}
+.hdgz_bnt{
+	position: absolute;
+	background-image: url('../resources/cl/v2.5.4/hdgz.png');
+	background-size: 100% 100%;
+	right: 0rem;
+	top: 0.5rem;
+	width: 3rem;
+	height: 1rem;
+	font-size: 0.5rem;
+	line-height: 1rem;
+	z-index: 999;
+}
+.ysxy_bnt{
+	position: absolute;
+	background-image: url('../resources/cl/v1.6.8/ysxy.png');
+	background-size: 100% 100%;
+	right: 0rem;
+	top: 0.5rem;
+	width: 3rem;
+	height: 1.3rem;
+	font-size: 0.5rem;
+	line-height: 1rem;
+}
+.dx_icon{
+	position: absolute;
+	top: 0.1rem;
+	left:4rem;
+	width: 2.3rem;
+	height: 0.8rem;
+	background-image: url('../resources/cl/dx_icon_1.png');
+	background-size: 100% auto;
+}
+
+/*浮动位置*/
+.bottom-fixed {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 9;
+}
